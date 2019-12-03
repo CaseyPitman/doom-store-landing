@@ -97,6 +97,32 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+  /*Base Styles - Mobile First*/
+
+  /*Global Styles*/
+
+  html {
+    font-size:10px;
+  }
+
+  h1,
+  h2,
+  h3, 
+  h4,
+  li {
+    font-family: 'Russo One', sans-serif;
+  }
+
+  p {
+    font-family: 'Stoke', serif;
+  }
+
+
+
+
+
+
+
 
   
 
