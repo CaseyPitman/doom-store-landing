@@ -97,12 +97,22 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-  /*Base Styles - Mobile First*/
+  
 
-  /*Global Styles*/
+  /*------Universal Styles------*/
 
   html {
     font-size:10px;
+    color:black;
+    
+  }
+
+  body {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow:row wrap;
+    
   }
 
   h1,
@@ -115,7 +125,181 @@ textarea {
 
   p {
     font-family: 'Stoke', serif;
+    font-size:1.6rem;
   }
+
+  a{
+    text-decoration: none;
+    color:#27753b;
+  }
+
+  /*[][][][] MOBILE FIRST STYLES [][][][]*/
+
+  /******** Mobile Global Styles********/
+
+  h2 {
+    font-size:2.4rem;
+  }
+  h3 {
+    font-size:2rem;
+  }
+
+  h4 {
+    font-size:1.8rem;
+  }
+
+  
+
+  /*=========HEADER========*/
+
+  header  {
+    background:black;
+    position:sticky;
+    z-index: 1;
+    top:0px;
+    width:100%;
+    height:auto;
+  }
+  
+  #header-content{
+    margin:auto;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow:row;
+    width:90%;
+  }
+
+  #logo {
+    padding-left:20px;
+  }
+  #header-img {
+    border:1px solid black;
+    border-radius:50%;
+    width:50px;
+    height:auto;
+    margin:10px 0;
+  }
+
+  #header ul {
+    list-style: none;
+    text-align:center;
+  }
+
+  #header ul li {
+    font-size:1.6rem;
+    padding:5px 0 5px 15px; 
+    display:inline;
+  }
+
+  #header ul li a {
+    color:#f62916;
+  }
+  
+/*=========Main Content=========*/
+
+
+  #content-wrapper {
+    width:100%;
+    margin:0px auto;
+  }
+
+  #splash img {
+    width: 100%;
+    height:auto;
+    margin:auto;
+  }
+
+
+  /****About Section ******/
+   
+  #about {
+    width:90%;
+    margin:auto;
+  }
+  
+  #video-container {
+    position:relative;
+    padding-bottom:56.25%;
+    height:0;
+    overflow:hidden;
+    margin:0;
+    max-width:560px;
+  }
+
+  #video {
+    position:absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    max-width:560px;
+    height:100%;
+    max-height:315px;
+  }
+
+  /******Use media query and youtube native code for tablet and desktop*/
+
+
+
+
+/***Products Section ******/
+
+  #products {
+    width:90%;
+    margin:auto;
+}
+
+
+
+/***** Pricing Section ****/
+
+  #pricing {
+    width:90%;
+    margin:auto;
+}
+
+
+
+
+
+/****** Contact Section ******/
+
+
+  #contact {
+    width:90%;
+    margin:auto;
+  }
+
+
+/******* Footer *******/
+
+#footer {
+  width:100%;
+  padding:10px 0 20px;
+  background:black;
+  color:#f62916;
+}
+
+#footer-content{
+  width:90%;
+  margin:auto;
+}
+
+
+#twitter-icon {
+  color:green;
+  font-size:5rem;
+}
+
+#twitter-handle {
+  color:blue;
+}
+
+
+ 
+
+
+
 
 
 
@@ -215,9 +399,7 @@ textarea {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
-}
+
 
 @media print,
   (-webkit-min-device-pixel-ratio: 1.25),

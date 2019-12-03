@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="en-us">
+<html lang="en-us">
 
 <head>
   <meta charset="utf-8">
@@ -26,21 +26,24 @@
 
 <body id="page-wrapper">
   <header id="header">
-    <nav id="nav-bar"> <!--sticky or fixed / background color silver of armor?-->
+    <div id="header-content">
       <img src="https://live.staticflickr.com/65535/49160385207_f62d572930_o.jpg" alt="Dr. Doom" id="header-img"> 
-      <ul>
-        <li><a href="#about" class="nav-link">About</a></li>
-        <li><a href="#products" class="nav-link">Products</a></li>
-        <li><a href="#pricing" class="nav-link">Pricing</a></li>
-      </ul>
-    </nav>
-
-    <div id="splash"> <!--background is latverian flag-->
-      <img src="https://live.staticflickr.com/65535/49164095656_b102490b9a_o.jpg" alt="Hero Image">
+    
+      <nav id="nav-bar"> <!--sticky or fixed / background color silver of armor?-->
+        <ul>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#products" class="nav-link">Products</a></li>
+         <li><a href="#pricing" class="nav-link">Pricing</a></li>
+       </ul>
+      </nav>
     </div>
   </header>
 
   <main id="content-wrapper">
+    <div id="splash"> <!--background is latverian flag-->
+      <img src="https://live.staticflickr.com/65535/49164095656_b102490b9a_o.jpg" alt="Hero Image">
+    </div>
+
     <section id="about">
       <div id="about-text">
         <h2>About Doom</h2>
@@ -53,11 +56,13 @@
           and on that day, the world's only hope will be Doom.
         </p>
       </div>
-      <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/V8ATsSTwyqk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </section> <!--End About Section-->
+      <figure id="video-container">
+        <iframe src="https://www.youtube.com/embed/V8ATsSTwyqk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen id="video"></iframe>
+      </figure>
+      </section> <!--End About Section-->
 
     <section id ="products">
-      <h2>A few of our most popular products</h2>
+      <h2>Check out some of our most popular products</h2>
       <div id="lmd-doombot" class="item">
         <h3>LMD-Doombot Hybrid</h3>
         <p>
@@ -132,11 +137,12 @@
       </form>
   </section>
 
-    <footer>
-     <h4>"We master all that lies before."</h4> <!--latverian motto-->
-     <p> Follow me on Twitter, tiny insect. So Doom commands and so shall you obey.</p>
-     <a href="https://twitter.com/TheLatverian"><i class="fab fa-twitter-square"></i>
-    </a>
+    <footer id="footer">
+     <div id="footer-content">
+      <h4>"We master all that lies before."</h4> <!--latverian motto-->
+      <p> Follow me on Twitter, tiny insect. So Doom commands and so shall you obey.</p>
+      <a href="https://twitter.com/TheLatverian" id="twitter-handle"><i class="fab fa-twitter-square" id="twitter-icon"></i>@TheLatverian</a>
+    </div>
 
     </footer>
 
