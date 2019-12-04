@@ -156,8 +156,6 @@ textarea {
     font-style: italic;
   }
 
-  
-
   /*=========HEADER========*/
 
   header  {
@@ -219,32 +217,33 @@ textarea {
     border:1px solid black;
   }
 
-
   /****About Section ******/
    
   #about {
     width:90%;
     margin:auto;
   }
-  
-  #video-container {
-    position:relative;
-    padding-bottom:56.25%;
-    height:0;
-    overflow:hidden;
-    margin:0;
-    max-width:560px;
-  }
 
-  #video {
-    position:absolute;
-    top:0;
-    left:0;
-    width: 100%;
-    max-width:560px;
-    height:100%;
-    max-height:315px;
-  }
+   #video-container {
+      position:relative;
+      padding-bottom:56.25%;
+      height:0;
+      overflow:hidden;
+      margin:0;
+      max-width:560px;
+     }
+
+    #video {
+      position:absolute;
+      top:0;
+      left:0;
+      width: 100%;
+      max-width:560px;
+      height:100%;
+      max-height:315px;
+     }
+     
+
 
   /******Use media query and youtube native code for tablet and desktop*/
 
@@ -295,10 +294,7 @@ textarea {
 #pricing-content  {
   padding:0 10px;
   margin-bottom:10px;
-
 }
-
-
 
 /****** Contact Section ******/
 
@@ -374,20 +370,6 @@ textarea {
   margin-top: 0px;
 }
 
-
- 
-
-
-
-
-
-
-
-
-
-
-
-  
 
 /* ==========================================================================
    Helper classes
@@ -477,6 +459,27 @@ textarea {
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
+
+
+
+   /*############# Tablet Styles #######*/
+   @media screen and (min-width:768px){
+
+      #video-container {
+      position:relative;
+      padding-bottom:315px;
+      height:auto;
+      overflow:hidden;
+      margin:30px auto;
+      max-width:560px;
+    }
+  
+    
+
+
+
+   }
+
 
 
 
