@@ -121,16 +121,19 @@ textarea {
   h4,
   li {
     font-family: 'Russo One', sans-serif;
+    font-variant:small-caps;
   }
 
   p {
     font-family: 'Stoke', serif;
     font-size:1.6rem;
+    margin:15px 0;
+    line-height:2.4rem;
   }
 
   a{
     text-decoration: none;
-    color:#27753b;
+    color:#f62916;
   }
 
   /*[][][][] MOBILE FIRST STYLES [][][][]*/
@@ -138,14 +141,19 @@ textarea {
   /******** Mobile Global Styles********/
 
   h2 {
-    font-size:2.4rem;
+    font-size:2.6rem;
+    margin:20px 0;
   }
   h3 {
-    font-size:2rem;
+    font-size:2.2rem;
+    margin:10px 0;
+    font-variant: small-caps;
   }
 
   h4 {
-    font-size:1.8rem;
+    font-size:2rem;
+    margin:15px auto;
+    font-style: italic;
   }
 
   
@@ -158,7 +166,7 @@ textarea {
     z-index: 1;
     top:0px;
     width:100%;
-    height:auto;
+    height:65px;
   }
   
   #header-content{
@@ -208,6 +216,7 @@ textarea {
     width: 100%;
     height:auto;
     margin:auto;
+    border:1px solid black;
   }
 
 
@@ -247,18 +256,47 @@ textarea {
   #products {
     width:90%;
     margin:auto;
+
 }
 
+  .item {
+  padding:10px 10px 20px;
+  margin-bottom:10px;
+  background:rgb(0, 0, 0);
+  color:whitesmoke;
+  display:flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-flow:row wrap;
+}
 
+.button {
+  background:#f62916;
+  width:50%;
+  height:auto;
+  font-size:1.8rem;
+  font-family: 'Russo One', sans-serif;
+  margin:auto;
+}
+
+.button:hover {
+  transform: scale(1.25)
+}
 
 /***** Pricing Section ****/
 
-  #pricing {
-    width:90%;
-    margin:auto;
+#pricing {
+  width:90%;
+  margin:20px auto 0;
+  border:1px solid black;
+
 }
 
+#pricing-content  {
+  padding:0 10px;
+  margin-bottom:10px;
 
+}
 
 
 
@@ -267,15 +305,41 @@ textarea {
 
   #contact {
     width:90%;
-    margin:auto;
+    margin:20px auto;
+    border: 1px solid black;
   }
 
+  #contact-content {
+    padding:0 10px;
+    margin-bottom:10px;
+    text-align:center;
+  }
+  
+  #email{
+    width:80%;
+    height: auto;
+    border:1px solid black;
+    font-size:1.8rem;
+    margin: 0 auto 15px;
+  }
+
+  #form {
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    flex-flow: row wrap;
+  }
+  #submit {
+    background:rgb(39, 117, 59);
+    margin:0 auto 15px;
+  }
+  
 
 /******* Footer *******/
 
 #footer {
   width:100%;
-  padding:10px 0 20px;
+  padding:10px 0 50px;
   background:black;
   color:#f62916;
 }
@@ -283,16 +347,31 @@ textarea {
 #footer-content{
   width:90%;
   margin:auto;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+#footer h4, 
+#footer p{
+  width:100%;
+  text-align:center;
 }
 
 
 #twitter-icon {
-  color:green;
-  font-size:5rem;
+  color:whitesmoke;
+  font-size:4rem;
 }
 
 #twitter-handle {
-  color:blue;
+  color:whitesmoke;
+  font-size: 3rem;
+}
+
+#footer p {
+  margin-top: 0px;
 }
 
 
